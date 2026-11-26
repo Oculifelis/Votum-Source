@@ -1,0 +1,21 @@
+{
+  "title": "Carte Blanche",
+  "icon": "minecraft:writable_book",
+  "chapters": [
+    {
+      "id": "votum",
+      "title": "Votum",
+      "icon": "votum:sealed_warrant"
+    },
+    {
+      "id": "perigee",
+      "title": "Perigee",
+      "icon": "minecraft:spyglass"
+    },
+    {
+      "id": "campanile",
+      "title": "Campanile",
+      "icon": "minecraft:bell"
+    }
+  ]
+}

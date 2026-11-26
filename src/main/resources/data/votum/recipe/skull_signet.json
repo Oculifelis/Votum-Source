@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:copper_ingot",
+    "minecraft:bone"
+  ],
+  "result": {
+    "id": "votum:skull_signet",
+    "count": 1
+  }
+}

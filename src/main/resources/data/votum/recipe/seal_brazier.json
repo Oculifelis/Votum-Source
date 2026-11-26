@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " H ",
+    "I I",
+    "SSS"
+  ],
+  "key": {
+    "H": "minecraft:honeycomb",
+    "I": "minecraft:iron_ingot",
+    "S": "minecraft:smooth_stone"
+  },
+  "result": {
+    "id": "votum:seal_brazier",
+    "count": 1
+  }
+}

@@ -1,0 +1,128 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+version = "${project.mod_version}+${project.minecraft_version}"
+group = project.mod_group
+base.archivesName = "${project.mod_id}-neoforge"
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://maven.theillusivec4.top/'
+        content { includeGroup 'top.theillusivec4.curios' }
+    }
+    maven {
+        url = 'https://maven.blamejared.com/'
+        content {
+            includeGroup 'mezz.jei'
+            includeGroup 'net.mezzdev.config'
+        }
+    }
+    maven {
+        url = 'https://api.modrinth.com/maven'
+        content { includeGroup 'maven.modrinth' }
+    }
+}
+
+// GameTests live in their own source set so the release jar carries none of them.
+sourceSets {
+    gametest {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+
+configurations {
+    gametestImplementation.extendsFrom implementation
+    gametestCompileOnly.extendsFrom compileOnly
+    gametestRuntimeOnly.extendsFrom runtimeOnly
+}
+
+dependencies {
+    implementation files("libs/${fundamentum_jar}")
+    compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
+    runtimeOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+    compileOnly "maven.modrinth:jade:${jade_version}"
+    if (!project.hasProperty('nocompat')) {
+        runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+        runtimeOnly "maven.modrinth:jade:${jade_version}"
+    }
+    // Thaumaturge compat (aspects, crystal and phial reagents) is data only; the GameTests load it when the jars are in libs.
+    if (file('libs/thaumaturge-26.1.2-NeoForge-1.1.0.jar').exists()) {
+        gametestRuntimeOnly files('libs/thaumaturge-26.1.2-NeoForge-1.1.0.jar', 'libs/lithostitched-1.8.1-neoforge-26.1.jar')
+    }
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.12.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+neoForge {
+    version = project.neo_version
+
+    runs {
+        client {
+            client()
+            gameDirectory = project.file('run/client')
+            systemProperty 'fundamentum.nofocus', 'true'
+        }
+        server {
+            server()
+            gameDirectory = project.file('run/server')
+            programArgument '--nogui'
+        }
+        gameTestServer {
+            type = 'gameTestServer'
+            sourceSet = sourceSets.gametest
+            gameDirectory = project.file('run/gametest')
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        configureEach {
+            logLevel = org.slf4j.event.Level.INFO
+            jvmArgument '-Xmx3G'
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
+            sourceSet sourceSets.gametest
+        }
+    }
+}
+
+neoForge.addModdingDependenciesTo(sourceSets.gametest)
+// The unit tests use plain Minecraft classes (ids, block positions), so they get the same classpath.
+neoForge.addModdingDependenciesTo(sourceSets.test)
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(AbstractArchiveTask).configureEach {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+
+tasks.named('jar') {
+    manifest.attributes(
+        'Implementation-Title': 'Votum',
+        'Implementation-Version': project.version,
+        'Implementation-Vendor': 'Oculifelis'
+    )
+}
+
+tasks.named('processResources') {
+    inputs.property 'mod_version', project.mod_version
+    filesMatching('META-INF/neoforge.mods.toml') { expand mod_version: project.mod_version }
+    from('LICENSE') { into 'META-INF' }
+    from('COPYING') { into 'META-INF' }
+}

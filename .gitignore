@@ -1,0 +1,11 @@
+.gradle/
+build/
+run/
+out/
+libs/
+*.iml
+.idea/
+.vscode/
+DECISIONS.md
+art_review_8x.png
+art_review*.png

@@ -1,0 +1,11 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "votum:item/sealing_wax",
+    "tints": [
+      {
+        "type": "votum:wax"
+      }
+    ]
+  }
+}

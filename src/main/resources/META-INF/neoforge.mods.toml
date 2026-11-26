@@ -1,0 +1,54 @@
+license="LGPL-3.0-or-later"
+
+[[mods]]
+modId="votum"
+version="${mod_version}"
+displayName="Votum"
+logoFile="votum_logo.png"
+authors="Oculifelis"
+credits="Signet Ring texture edited from Celestial Artifacts (LGPL-2.1). Seal Pendant texture edited from Ancient Curses (MIT)."
+description='''
+Votum binds players to sworn pacts. Melt Sealing Wax in a Seal Brazier, press a Signet into a warrant at the Signet Desk, then keep the oath and the clause. A finished pact is pressed into a Signet Ring or Seal Pendant that gives its boon while worn. Every pact, wax and boon is datapack JSON.
+'''
+
+[[dependencies.votum]]
+    modId="neoforge"
+    type="required"
+    versionRange="[26.1.2.122,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.votum]]
+    modId="minecraft"
+    type="required"
+    versionRange="[26.1.2]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.votum]]
+    modId="fundamentum"
+    type="required"
+    versionRange="[2.0.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.votum]]
+    modId="curios"
+    type="required"
+    versionRange="[15.0.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.votum]]
+    modId="jei"
+    type="optional"
+    versionRange="[29.0,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.votum]]
+    modId="jade"
+    type="optional"
+    versionRange="[26.1,)"
+    ordering="NONE"
+    side="BOTH"

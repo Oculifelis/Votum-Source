@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "contents=0,facing=north": {
+      "model": "votum:block/signet_desk"
+    },
+    "contents=1,facing=north": {
+      "model": "votum:block/signet_desk_blank"
+    },
+    "contents=2,facing=north": {
+      "model": "votum:block/signet_desk_waxed"
+    },
+    "contents=3,facing=north": {
+      "model": "votum:block/signet_desk_piece"
+    },
+    "contents=0,facing=east": {
+      "model": "votum:block/signet_desk",
+      "y": 90
+    },
+    "contents=1,facing=east": {
+      "model": "votum:block/signet_desk_blank",
+      "y": 90
+    },
+    "contents=2,facing=east": {
+      "model": "votum:block/signet_desk_waxed",
+      "y": 90
+    },
+    "contents=3,facing=east": {
+      "model": "votum:block/signet_desk_piece",
+      "y": 90
+    },
+    "contents=0,facing=south": {
+      "model": "votum:block/signet_desk",
+      "y": 180
+    },
+    "contents=1,facing=south": {
+      "model": "votum:block/signet_desk_blank",
+      "y": 180
+    },
+    "contents=2,facing=south": {
+      "model": "votum:block/signet_desk_waxed",
+      "y": 180
+    },
+    "contents=3,facing=south": {
+      "model": "votum:block/signet_desk_piece",
+      "y": 180
+    },
+    "contents=0,facing=west": {
+      "model": "votum:block/signet_desk",
+      "y": 270
+    },
+    "contents=1,facing=west": {
+      "model": "votum:block/signet_desk_blank",
+      "y": 270
+    },
+    "contents=2,facing=west": {
+      "model": "votum:block/signet_desk_waxed",
+      "y": 270
+    },
+    "contents=3,facing=west": {
+      "model": "votum:block/signet_desk_piece",
+      "y": 270
+    }
+  }
+}

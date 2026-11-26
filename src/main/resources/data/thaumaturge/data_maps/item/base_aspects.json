@@ -1,0 +1,164 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thaumaturge"
+    }
+  ],
+  "values": {
+    "votum:sealing_wax": [
+      {
+        "aspect": "thaumaturge:ordo",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:vinculum",
+        "amount": 1
+      }
+    ],
+    "votum:blank_warrant": [
+      {
+        "aspect": "thaumaturge:cognitio",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:vinculum",
+        "amount": 1
+      }
+    ],
+    "votum:sealed_warrant": [
+      {
+        "aspect": "thaumaturge:cognitio",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:vinculum",
+        "amount": 3
+      }
+    ],
+    "votum:fulfilled_warrant": [
+      {
+        "aspect": "thaumaturge:cognitio",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:ordo",
+        "amount": 3
+      }
+    ],
+    "votum:skull_signet": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 4
+      },
+      {
+        "aspect": "thaumaturge:mortuus",
+        "amount": 2
+      }
+    ],
+    "votum:hoof_signet": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 4
+      },
+      {
+        "aspect": "thaumaturge:bestia",
+        "amount": 2
+      }
+    ],
+    "votum:coin_signet": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 4
+      },
+      {
+        "aspect": "thaumaturge:desiderium",
+        "amount": 2
+      }
+    ],
+    "votum:fang_signet": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 4
+      },
+      {
+        "aspect": "thaumaturge:alkimia",
+        "amount": 2
+      }
+    ],
+    "votum:tide_signet": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 4
+      },
+      {
+        "aspect": "thaumaturge:aqua",
+        "amount": 2
+      }
+    ],
+    "votum:eye_signet": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 4
+      },
+      {
+        "aspect": "thaumaturge:alienis",
+        "amount": 2
+      }
+    ],
+    "votum:signet_ring": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 6
+      },
+      {
+        "aspect": "thaumaturge:desiderium",
+        "amount": 4
+      }
+    ],
+    "votum:seal_pendant": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 4
+      },
+      {
+        "aspect": "thaumaturge:desiderium",
+        "amount": 3
+      }
+    ],
+    "votum:seal_brazier": [
+      {
+        "aspect": "thaumaturge:ignis",
+        "amount": 6
+      },
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 6
+      }
+    ],
+    "votum:signet_desk": [
+      {
+        "aspect": "thaumaturge:herba",
+        "amount": 6
+      },
+      {
+        "aspect": "thaumaturge:cognitio",
+        "amount": 3
+      }
+    ],
+    "votum:charter_post": [
+      {
+        "aspect": "thaumaturge:herba",
+        "amount": 4
+      },
+      {
+        "aspect": "thaumaturge:cognitio",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:ordo",
+        "amount": 2
+      }
+    ]
+  }
+}

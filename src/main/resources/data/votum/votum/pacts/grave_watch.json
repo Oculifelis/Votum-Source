@@ -1,0 +1,31 @@
+{
+  "pact": "votum:grave_watch",
+  "signet": "votum:skull_signet",
+  "wax": "votum:bone",
+  "piece": "ring",
+  "oath": {
+    "type": "kill",
+    "targets": "#minecraft:undead",
+    "count": 25
+  },
+  "clause": {
+    "type": "die_to",
+    "targets": "#minecraft:undead"
+  },
+  "boon": {
+    "modifiers": [
+      {
+        "element": "shadow",
+        "kind": "resistance",
+        "amount": 0.15,
+        "operation": "add_value"
+      },
+      {
+        "element": "holy",
+        "kind": "damage",
+        "amount": 0.1,
+        "operation": "add_value"
+      }
+    ]
+  }
+}

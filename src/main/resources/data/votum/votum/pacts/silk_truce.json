@@ -1,0 +1,26 @@
+{
+  "pact": "votum:silk_truce",
+  "signet": "votum:fang_signet",
+  "wax": "votum:ink",
+  "piece": "pendant",
+  "oath": {
+    "type": "abstain",
+    "targets": "#votum:silk_kin",
+    "days": 3
+  },
+  "clause": {
+    "type": "kill",
+    "targets": "#votum:silk_kin"
+  },
+  "boon": {
+    "modifiers": [
+      {
+        "element": "poison",
+        "kind": "resistance",
+        "amount": 0.25,
+        "operation": "add_value"
+      }
+    ],
+    "truce": "#votum:silk_kin"
+  }
+}

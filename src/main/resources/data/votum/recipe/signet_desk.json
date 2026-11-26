@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "C C"
+  ],
+  "key": {
+    "S": "#minecraft:wooden_slabs",
+    "C": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "votum:signet_desk",
+    "count": 1
+  }
+}

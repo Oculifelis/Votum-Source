@@ -1,0 +1,21 @@
+{
+  "pact": "votum:merchants_bond",
+  "signet": "votum:coin_signet",
+  "wax": "votum:gilded",
+  "piece": "ring",
+  "faction": "fundamentum:village",
+  "reward": 50,
+  "penalty": 50,
+  "oath": {
+    "type": "trade",
+    "targets": "#votum:village_folk",
+    "count": 20
+  },
+  "clause": {
+    "type": "hurt",
+    "targets": "#votum:village_folk"
+  },
+  "boon": {
+    "standing": 100
+  }
+}

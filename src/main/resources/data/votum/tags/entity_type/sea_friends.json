@@ -1,0 +1,8 @@
+{
+  "values": [
+    "minecraft:dolphin",
+    "minecraft:turtle",
+    "minecraft:axolotl",
+    { "id": "mariculture:rockhopper", "required": false }
+  ]
+}

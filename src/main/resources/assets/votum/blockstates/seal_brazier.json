@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "fill=0": {
+      "model": "votum:block/seal_brazier"
+    },
+    "fill=1": {
+      "model": "votum:block/seal_brazier_fill1"
+    },
+    "fill=2": {
+      "model": "votum:block/seal_brazier_fill2"
+    }
+  }
+}

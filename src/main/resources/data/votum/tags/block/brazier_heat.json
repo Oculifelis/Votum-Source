@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "minecraft:campfire",
+      "required": false
+    },
+    "minecraft:fire",
+    "minecraft:soul_fire",
+    "minecraft:magma_block",
+    "minecraft:lava",
+    {
+      "id": "minecraft:soul_campfire",
+      "required": false
+    },
+    {
+      "id": "tempestas:ember_salt_block",
+      "required": false
+    }
+  ]
+}

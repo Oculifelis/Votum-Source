@@ -1,0 +1,29 @@
+{
+  "name": "Illager Host",
+  "color": "#5A5F66",
+  "members": [
+    "#votum:illager_host"
+  ],
+  "min": -1000,
+  "max": 0,
+  "start": -200,
+  "ranks": [
+    {
+      "id": "hated",
+      "min": -1000,
+      "attitude": "hostile"
+    },
+    {
+      "id": "wary",
+      "min": -99,
+      "attitude": "neutral"
+    }
+  ],
+  "actions": {
+    "kill_member": -10
+  },
+  "drift": {
+    "per_day": 10,
+    "toward": -200
+  }
+}

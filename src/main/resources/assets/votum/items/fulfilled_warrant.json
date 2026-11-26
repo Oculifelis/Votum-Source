@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "votum:item/fulfilled_warrant"
+  }
+}

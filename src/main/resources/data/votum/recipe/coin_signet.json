@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:copper_ingot",
+    "minecraft:emerald"
+  ],
+  "result": {
+    "id": "votum:coin_signet",
+    "count": 1
+  }
+}

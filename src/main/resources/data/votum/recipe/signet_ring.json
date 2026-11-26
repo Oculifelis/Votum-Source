@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " N ",
+    "N N",
+    " G "
+  ],
+  "key": {
+    "N": "minecraft:gold_nugget",
+    "G": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "votum:signet_ring",
+    "count": 1
+  }
+}

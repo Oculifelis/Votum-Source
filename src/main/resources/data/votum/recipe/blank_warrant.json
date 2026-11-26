@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:string",
+    "minecraft:honeycomb"
+  ],
+  "result": {
+    "id": "votum:blank_warrant",
+    "count": 2
+  }
+}

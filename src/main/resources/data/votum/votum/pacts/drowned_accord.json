@@ -1,0 +1,30 @@
+{
+  "pact": "votum:drowned_accord",
+  "signet": "votum:tide_signet",
+  "wax": "votum:tidal",
+  "piece": "ring",
+  "oath": {
+    "type": "kill",
+    "targets": "#votum:tide_foes",
+    "count": 15
+  },
+  "clause": {
+    "type": "kill",
+    "targets": "#votum:sea_friends"
+  },
+  "boon": {
+    "modifiers": [
+      {
+        "element": "water",
+        "kind": "resistance",
+        "amount": 0.2,
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:oxygen_bonus",
+        "amount": 1,
+        "operation": "add_value"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pact": "votum:ender_covenant",
+  "signet": "votum:eye_signet",
+  "wax": "votum:crimson",
+  "piece": "pendant",
+  "oath": {
+    "type": "abstain",
+    "targets": "#votum:ender_kin",
+    "days": 3
+  },
+  "clause": {
+    "type": "kill",
+    "targets": "#votum:ender_kin"
+  },
+  "boon": {
+    "modifiers": [
+      {
+        "element": "arcane",
+        "kind": "resistance",
+        "amount": 0.15,
+        "operation": "add_value"
+      }
+    ],
+    "gaze_safe": true
+  }
+}

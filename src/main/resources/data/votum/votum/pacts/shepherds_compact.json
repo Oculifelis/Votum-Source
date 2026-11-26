@@ -1,0 +1,30 @@
+{
+  "pact": "votum:shepherds_compact",
+  "signet": "votum:hoof_signet",
+  "wax": "votum:verdant",
+  "piece": "pendant",
+  "oath": {
+    "type": "breed",
+    "targets": "#votum:farm_animals",
+    "count": 12
+  },
+  "clause": {
+    "type": "kill",
+    "targets": "#votum:farm_animals"
+  },
+  "boon": {
+    "modifiers": [
+      {
+        "attribute": "minecraft:luck",
+        "amount": 1,
+        "operation": "add_value"
+      },
+      {
+        "element": "earth",
+        "kind": "resistance",
+        "amount": 0.1,
+        "operation": "add_value"
+      }
+    ]
+  }
+}

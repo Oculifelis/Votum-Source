@@ -1,0 +1,44 @@
+{
+  "name": "Village",
+  "color": "#7FB238",
+  "members": [
+    "#votum:village_folk"
+  ],
+  "min": -1000,
+  "max": 1000,
+  "start": 0,
+  "ranks": [
+    {
+      "id": "outcast",
+      "min": -1000,
+      "attitude": "hostile",
+      "price": 1.5
+    },
+    {
+      "id": "stranger",
+      "min": -199,
+      "attitude": "neutral",
+      "price": 1.0
+    },
+    {
+      "id": "friend",
+      "min": 100,
+      "attitude": "friendly",
+      "price": 0.9
+    },
+    {
+      "id": "patron",
+      "min": 400,
+      "attitude": "friendly",
+      "price": 0.8
+    }
+  ],
+  "actions": {
+    "kill_member": -100,
+    "trade": 2
+  },
+  "drift": {
+    "per_day": 5,
+    "toward": 0
+  }
+}

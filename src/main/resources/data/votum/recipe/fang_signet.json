@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:copper_ingot",
+    "minecraft:spider_eye"
+  ],
+  "result": {
+    "id": "votum:fang_signet",
+    "count": 1
+  }
+}

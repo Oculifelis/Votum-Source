@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:string",
+    "minecraft:string",
+    "minecraft:gold_ingot"
+  ],
+  "result": {
+    "id": "votum:seal_pendant",
+    "count": 1
+  }
+}

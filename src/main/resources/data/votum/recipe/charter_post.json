@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BPB",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "B": "#minecraft:planks",
+    "P": "minecraft:paper",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "votum:charter_post",
+    "count": 1
+  }
+}
